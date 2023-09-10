@@ -1,0 +1,362 @@
+/* The side navigation menu */
+
+body {
+    font-family: sans-serif;
+  }
+
+a{
+    font-size:larger;
+    text-align: left;
+}
+.sidebar ion-icon{
+    padding-right: 30px;  
+}
+.prof ion-icon{
+  padding-right: 30px;  
+}
+
+.btn{
+    width: 180px;
+    height: 40px;
+    border-radius: 15px;
+    border-style: none;
+    background-color: #1da1f2;
+}
+
+button ion-icon{
+    color: white;
+
+}
+svg{
+    padding-right: 30px;
+    padding-left: 2px;
+    
+}
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: white;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    }
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 13px;
+    text-decoration: none;
+
+  }
+  /* Active/current link */
+  .sidebar a.active {
+    background-color:rgb(183, 181, 181);
+    color: black;
+    padding: 16px;
+  }
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: rgb(231, 229, 229);
+    color: black;
+    border-radius: 10px ;
+    
+  }
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    margin-left: 200px;
+    
+    height: 100%;
+    width: 600px;
+    border-right-color: rgb(218, 216, 216);
+    border-right-width: 2px ;
+    border-right-style: solid;
+  }
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: whhite;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding-top: 25px;
+    text-decoration: none;
+    font-size: 17px;
+    width: 297px;
+    border-bottom: rgb(218, 216, 216);
+    border-bottom-style: solid;
+    
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover,a.active:hover {
+    background-color: #ddd;
+    color: black;
+    
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active{
+    background-color: white;
+    color:black;
+    border-bottom: #1da1f2;
+    border-bottom-style: solid;
+  }
+
+  img{
+    margin-top: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+
+  input{
+    height: 25px;
+    width: 500px;
+    border: none;
+    
+  }
+
+::placeholder{
+    font-size: 1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+  .svg-icon {
+    width: 1em;
+    height: 1em;
+  }
+  
+  .svg-icon path,
+  .svg-icon polygon,
+  .svg-icon rect {
+    fill: #4691f6;
+  }
+  
+  .svg-icon circle {
+    stroke: #4691f6;
+    stroke-width: 1;
+  }
+
+  a{
+    color: #4691f6;
+  }
+
+.ico{
+    margin-bottom: 10px;
+  }
+.child a:hover:not(.active){
+    background-color: rgb(231, 229, 229);
+    color: black;
+    border-radius: 50% ;
+    height: 3px;
+    
+}
+
+
+#post{
+    width: 500px;
+    height:300px;
+    border-radius: 10px;
+  }
+.posts{
+    border-top-color: #ddd;
+    border-top-width: 2px;
+    border-top-style: solid;
+    padding-left: 50px;
+}
+.posts :hover{
+  background-color: rgb(246, 243, 243);
+}
+#at{
+    color: #2828285b;
+  }
+
+.parent {
+    text-align: center;
+    width: 600px;
+    
+  }
+.child {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+.bty{
+    width: 70px;
+    height: 40px;
+    border-radius: 15px;
+    border-style: none;
+    background-color: #1da1f2;
+    margin-left: 200px;
+    margin-bottom: 5px;
+    opacity: 50%;
+}
+
+
+
+.bottom ion-icon{
+  padding-right: 0;
+  padding-left: 50px;
+}
+.bottom a{
+  font-size: 0.8rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration:none;
+  color: grey;
+  
+}
+.bottom{
+  align-content: space-evenly
+  
+}
+
+#l{
+  margin-left: 220px;
+}
+
+.search{
+  width: 360px;
+  border: transparent;
+  background-color: transparent ;
+  height:42px;
+  border-radius: 20px;
+  margin-left: 20px;
+  color: inherit;
+}
+
+
+
+form {
+  background-color: rgb(230, 236, 240);
+  display: flex;
+  margin-left: 20px;
+  border-style: none;
+  border-radius: 20px;
+  width: 360px;
+}
+input[type="search"]:focus {
+
+  border-color: transparent;
+  outline: none;
+  
+}
+
+
+button[type="submit"] {
+  text-indent: -999px;
+  overflow: hidden;
+  width: 40px;
+  padding: 0;
+  margin-right: 0;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+button[type="submit"]:hover {
+  opacity: 1;
+  
+}
+
+.subscribe{
+  width: 360px;
+  margin-left: 20px;
+  border-radius: 20px;
+  background-color: rgb(243, 248, 251);
+}
+
+.trends{
+  width: 360px;
+  margin-left: 20px;
+  border-radius: 20px;
+  background-color: rgb(243, 248, 251);
+ 
+}
+.subscribe h4,h3{
+  padding: 0 12px 0 12px;
+}
+p4{
+  color: #1da1f2;
+}
+.subscribe h3{
+  padding-top: 10px;
+}
+button[type="sub"]{
+  height:35px;
+  width: 100px;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 1rem; 
+  
+}
+
+.part2 a{
+  color:black;
+
+}
+.part1{
+  margin-left: 20px;
+}
+.trends h2{
+  
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.trees{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.trees :hover{
+  background-color: rgb(225, 227, 228);
+}
+
+button[type="follow"]{
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  height: 30px;
+  width: 70px;
+}
+
+.follow{
+  background-color:rgb(243, 248, 251);
+  margin-left: 20px;
+  border-radius: 20px;
+  width: 360px;
+  
+}
+
+.info{
+  size: 1rem;
+  margin-left: 20px;
+  border-radius: 20px;
+  width: 360px;
+  
+}
+.top :hover{
+  background-color: rgb(211, 208, 208);
+}
+.top{
+  margin-left: 20px;
+}
+.follow h2{
+  margin-left: 20px;
+}
+
+#bo{
+  color: grey; 
+  text-decoration: none;
+  size: 0.2rem;
+}
+
